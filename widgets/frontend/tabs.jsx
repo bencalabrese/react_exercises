@@ -7,16 +7,18 @@ var Tabs = React.createClass({
   },
 
   clickHandler : function(event) {
-    // this.setState({selectedTabIdx: idx});
     var index = event.currentTarget.getAttribute('data-index');
     this.setState({selectedTabIdx: index});
   },
 
   render : function() {
-    var tabTitles = ["Lasers", "Clouds", "Cats"],
-        tabArticles = ["Zap", "Float", "Meow"];
+    var tabTitles = [];
+    var tabArticles = [];
 
-
+    this.props.tabData.forEach(function(datum){
+      tabTitles.push(datum.title);
+      tabArticles.push(datum.article);
+    });
 
     var selectedArticle = tabArticles[this.state.selectedTabIdx];
 

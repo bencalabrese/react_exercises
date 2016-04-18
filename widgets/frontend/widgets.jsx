@@ -4,9 +4,14 @@ var React = require('react'),
 
 var Widgets = React.createClass({
   render: function() {
+
+    var tabData = [{title: "Lasers", article: "Zap"},
+                   {title: "Clouds", article: "Float"},
+                   {title: "Cats", article: "Meow"}];
+
     return(
       <div>
-        <Tabs/>
+        <Tabs tabData={tabData}/>
       </div>
     );
   }
