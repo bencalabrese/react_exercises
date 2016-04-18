@@ -43,7 +43,6 @@ var Weather = React.createClass({
 
       return (
         <div className="weather-box">
-          <h3>Weather!</h3>
           <p>Current city: {city}</p>
           <p>Current temperature: {temp}°F</p>
           <p>Current weather: {description}</p>

@@ -32,3 +32,18 @@ article {
   padding: 10px;
   clear: both;
 }
+
+.weather-box {
+  background-image: url(http://spaceplace.nasa.gov/templates/featured/sun/sunburn300.png);
+  border: 1px solid darkblue;
+  width: 300px;
+  height: 300px;
+  color: white;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.weather-box p {
+  float: left;
+  margin-left: 10px;
+}
