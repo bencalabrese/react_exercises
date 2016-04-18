@@ -41,7 +41,7 @@ var Autocomplete = React.createClass({
 
         <br></br>
 
-        <ul className="search-matches">
+        <ul className="search-matches group">
           {searchMatchLis}
         </ul>
       </aside>

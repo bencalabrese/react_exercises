@@ -12,16 +12,18 @@ var Widgets = React.createClass({
       "Paul", "George", "Steven", "John", "Jessica"
     ];
 
-    var tabData = [{title: "Lasers", article: "Zap"},
-                   {title: "Clouds", article: "Float"},
-                   {title: "Cats", article: "Meow"},
-                   {title: "Clock", article: <Clock/>},
-                   {title: "Weather", article: <Weather/>}];
+    var tabData = [
+      {title: "Lasers", article: "Zap"},
+      {title: "Clouds", article: "Float"},
+      {title: "Cats", article: "Meow"},
+      {title: "Clock", article: <Clock/>},
+      {title: "Weather", article: <Weather/>},
+      {title: "Search", article: <Autocomplete names={names}/>}
+    ];
 
     return (
       <div>
         <Tabs tabData={tabData}/>
-        <Autocomplete names={names}/>
       </div>
     );
   }
