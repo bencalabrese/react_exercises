@@ -7,7 +7,8 @@ var Header = React.createClass({
       return (
         <h2 data-index={index}
             className="tab"
-            onClick={this.props.clickCallback}>
+            onClick={this.props.clickCallback}
+            key={title}>
             {title}
         </h2>
       );
