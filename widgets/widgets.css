@@ -11,23 +11,24 @@ html, body, div, article, ul, h1, h2 {
   display: block;
 }
 
-body {
-
-}
-
-ul {
-
-}
-
 .tab-header {
+  background: lightblue;
+  border-bottom: 1px solid darkblue;
+}
+
+.tab {
+  color: black;
   float: left;
   padding: 10px;
 }
 
-.tab-header:hover {
-  color: red;
+.tab:hover {
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 article {
   padding: 10px;
+  clear: both;
 }

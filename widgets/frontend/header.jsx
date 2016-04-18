@@ -6,7 +6,7 @@ var Header = React.createClass({
     var headers = this.props.tabTitles.map(function(title, index) {
       return (
         <h2 data-index={index}
-            className="tab-header"
+            className="tab"
             onClick={this.props.clickCallback}>
             {title}
         </h2>
@@ -14,7 +14,7 @@ var Header = React.createClass({
     }.bind(this));
 
     return (
-      <ul>{headers}</ul>
+      <ul className="tab-header group">{headers}</ul>
     );
   }
 });

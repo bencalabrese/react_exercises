@@ -22,7 +22,8 @@ var Tabs = React.createClass({
 
     return (
       <div>
-        <Header clickCallback={this.clickHandler} tabTitles={tabTitles}/>
+        <Header clickCallback={this.clickHandler}
+                tabTitles={tabTitles}/>
         <article>{selectedArticle}</article>
       </div>
     );
