@@ -10,16 +10,21 @@ var Tabs = React.createClass({
         tabArticles = ["Zap", "Float", "Meow"];
 
     var headers = tabTitles.map(function(title, index) {
-      return <h2 data-index={index}>{title}</h2>
+      return <h2 data-index={index} className="tab-header">{title}</h2>
     });
-        
+
+    var selectedArticle = tabArticles[this.state.selectedTabIdx]
+
     return (
       <div>
-        <ul>
+        <ul className="group">
           {headers}
         </ul>
+        <article>
+          {selectedArticle}
+        </article>
       </div>
-    )
+    );
   }
 });
 

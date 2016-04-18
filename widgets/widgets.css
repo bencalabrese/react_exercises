@@ -1,0 +1,33 @@
+html, body, div, article, ul, h1, h2 {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+
+}
+
+ul {
+
+}
+
+.tab-header {
+  float: left;
+  padding: 10px;
+}
+
+.tab-header:hover {
+  color: red;
+}
+
+article {
+  padding: 10px;
+}

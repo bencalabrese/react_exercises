@@ -20039,18 +20039,25 @@
 	    var headers = tabTitles.map(function (title, index) {
 	      return React.createElement(
 	        "h2",
-	        { "data-index": index },
+	        { "data-index": index, className: "tab-header" },
 	        title
 	      );
 	    });
+	
+	    var selectedArticle = tabArticles[this.state.selectedTabIdx];
 	
 	    return React.createElement(
 	      "div",
 	      null,
 	      React.createElement(
 	        "ul",
-	        null,
+	        { className: "group" },
 	        headers
+	      ),
+	      React.createElement(
+	        "article",
+	        null,
+	        selectedArticle
 	      )
 	    );
 	  }
