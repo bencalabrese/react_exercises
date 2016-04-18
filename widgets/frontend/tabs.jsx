@@ -8,7 +8,7 @@ var Tabs = React.createClass({
 
   clickHandler : function(event) {
     // this.setState({selectedTabIdx: idx});
-    var index = event.currentTarget.attributes('data-index');
+    var index = event.currentTarget.getAttribute('data-index');
     this.setState({selectedTabIdx: index});
   },
 
@@ -27,7 +27,7 @@ var Tabs = React.createClass({
       </div>
     );
   }
-  
+
 });
 
 module.exports = Tabs;
